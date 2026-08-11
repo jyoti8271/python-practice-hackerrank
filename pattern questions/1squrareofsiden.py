@@ -15,5 +15,7 @@ def square(n):
     return result
 n=int(input())
 rows=square(n)
+
+
 for row in rows:
     print(row)
