@@ -147,17 +147,21 @@
 
 
 def insertNodeAtPosition(llist, data, position):
+    ##creating the new node
     new_node = SinglyLinkedListNode(data)
+    #if the given position==0 the node align at the left position and it behave like as a head
     
     if position == 0:
         new_node.next = llist
         return new_node
+    
     else:
         current = llist
-        # position = 3 hai toh range(2) chalega (yaani 2 jumps)
+        # setting the position
         for _ in range(position - 1):
             current = current.next
-            
+        
+        ##adding the pointers of new node to existing left and right node     
         new_node.next = current.next
         current.next = new_node
         return llist
