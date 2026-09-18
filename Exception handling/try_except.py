@@ -121,6 +121,24 @@ except dobExceptioon:
 finally:
     print("sorry your age should be graeter than 20 and less than 30")
     
+    
+##real world use case on file handling 
+try:
+    file=open("example.txt",'r')
+    content=file.read()
+    print(content)
+    
+except FileNotFoundError:
+    print("the file does not exist")
+    
+finally:
+    if 'file' in locals () and not file.closed():
+        file.close()
+        
+    print('file close')
+    
+    
+    
 
 
 
