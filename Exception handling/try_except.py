@@ -43,6 +43,46 @@ except ZeroDivisionError as ex:
 except Exception as ex1:
     
     print("main exception can caught here")
+    
+    
+## new question
+try:
+    num=int(input("enter the new age"))
+    result=10/num
+    
+except ValueError:
+    print("this is not a vlaid number")
+    
+except ZeroDivisionError:
+    print("enter denominator greater than 0")
+    
+except Exception as ex:
+    print("hii")
+    
+
+##try,except, else block
+try:
+    num=int(input("enter the number"))
+    result=1/num
+    
+except ValueError:
+    print("this is not a vlaid number")
+except ZeroDivisionError:
+    print("you can't divide by zero")
+
+except Exception as ex:
+    print("ex")
+    
+else:
+    print(f"the result is{result}")   
+    
+
+
+
+#try,except,else,finally
+b 
+
+
 
 
 
