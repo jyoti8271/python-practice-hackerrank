@@ -80,8 +80,47 @@ else:
 
 
 #try,except,else,finally
-b 
+try:
+    num=int(input("enter the number"))
+    result=1/num
+    
+except ValueError:
+    print("this is not a vlaid number")
+except ZeroDivisionError:
+    print("you can't divide by zero")
+    #base case
 
+except Exception as ex:
+    print("ex")
+    
+else:
+    print(f"the result is{result}") 
+    
+finally:
+    print("execution complete")
+    
+    
+###custom exception handling
+
+class Error(Exception):
+    pass
+class dobExceptioon(Error):
+    pass
+
+try:
+    year=int(input("enter the year"))
+    age=2024-year
+    if age<=30 and age>=20:
+        print("the age is valid you can apply for the vote")
+    else:
+        raise dobExceptioon
+    
+except dobExceptioon:
+    print("your age sould be greater than 20")
+    
+finally:
+    print("sorry your age should be graeter than 20 and less than 30")
+    
 
 
 
