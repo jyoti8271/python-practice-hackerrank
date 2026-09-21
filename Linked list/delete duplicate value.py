@@ -1,0 +1,11 @@
+def removeDuplicates(llist):
+    if not llist:
+        return llist
+    current = llist
+
+    while current and current.next:
+        if current.data == current.next.data: 
+            current.next = current.next.next
+        else:
+            current = current.next
+    return llist
