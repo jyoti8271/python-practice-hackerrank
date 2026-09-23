@@ -24,7 +24,7 @@ print(account.balance)
 
 
 
-###this concept using pytho concept
+###this concept using python concept
 class BankAccount:
 
     def __init__(self, balance):
