@@ -66,6 +66,9 @@ def faactorial(n):
         ans=ans*i
     return ans
 print(faactorial(8))
+
+
+
         
 
 
